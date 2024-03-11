@@ -1,0 +1,133 @@
+<html>
+<head>
+<title> Quiz Login</title>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+h2{
+font-style:italic;
+font-size:30px;
+padding: 30px 35px;
+margin: -10px -50px;
+text-align:center;
+border-radius: 10px 10px 0 0;
+color:#ffffff
+}
+body {
+    background: linear-gradient(184deg,#4e3e73,#725b86);
+}
+hr{
+margin: 10px -50px;
+border: 0;
+border-top: 1px solid #ffffff;
+margin-bottom: 40px;
+}
+div.container{
+width: 100%;
+height:100%;
+margin:35px auto;
+font-family: 'Raleway', sans-serif;
+}
+div.main{
+    margin-top: 120px;
+width: 350px;
+height: 400px;
+padding: 10px 50px 25px;
+border: 2px solid gray;
+border-radius: 10px;
+font-family: raleway;
+}
+input[type=text],input[type=password]{
+width: 100%;
+height: 40px;
+padding: 5px;
+margin-bottom: 25px;
+margin-top: 5px;
+border: 2px solid #ccc;
+color: #4f4f4f;
+font-size: 16px;
+border-radius: 5px;
+}
+label{
+color: #000000;
+text-shadow: 0 1px 0 #6b6b6b;
+font-size: 17px;
+font-weight: bold;
+}
+center{
+font-size:32px;
+}
+.note{
+color:rgb(255, 0, 0);
+text-shadow: #ff0000;
+text-decoration: bold;
+text-align: left;
+}
+.valid{
+color:rgb(255, 255, 255);
+text-align: left;
+align-items: left;
+}
+.back{
+text-decoration: none;
+border: 1px solid rgb(231, 236, 239);
+background-color: rgb(238, 242, 243);
+padding: 3px 20px;
+border-radius: 4px;
+color: black;
+}
+input[type=button]{
+font-size: 16px;
+background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
+border: 1px solid #e5a900;
+color: #4E4D4B;
+font-weight: bold;
+cursor: pointer;
+width: 100%;
+border-radius: 5px;
+padding: 10px 0;
+outline:none;
+}
+input[type=button]:hover{
+background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+}
+</style>
+</head>
+<body> <b>
+<div class="container" align="center">
+<div class="main">
+<h2>Quiz Login</h2>
+<form id="form_id" method="post" name="myform">
+<label>User Name :</label>
+<input type="text" name="username" id="username"/>
+<label>Password :</label>
+<input type="password" name="password" id="password"/>
+<input type="button" value="Login" id="submit" onclick="validate()"/>
+</form>
+<span><b class="note">Note : </b>Use these credentials for Login<br/><b class="valid">User Name : user<br/>Password : abc@123</b></span>
+</div>
+</div>
+<script>
+    //var attempt = 3;
+function validate(){
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "user" && password == "abc@123"){
+alert ("Login Successful, Click OK to Continue");
+window.location = "http://127.0.0.1:3000/Quiz Game/quiz.html"; // redirect to quiz page
+return false;
+}
+else{
+//attempt --;
+alert("Login Failed, Try Again !");
+// Disabling fields after 3 attempts.
+// if( attempt == 0){
+// document.getElementById("username").disabled = true;
+// document.getElementById("password").disabled = true;
+// document.getElementById("submit").disabled = true;
+// return false;
+// }
+}
+}
+</script>
+</body>
+</html>
