@@ -1,0 +1,35 @@
+{
+    "users":[
+        {
+            "id" :1,
+            "name" :"jhn",
+            "email" :"joh12@example.com",
+            "password":"cu123"
+        },
+        {
+            "id" :2,
+            "name" :"john",
+            "email" :"joh1@example.com",
+            "password":"chomu"
+        },
+        {
+            "id" :3,
+            "name" :"jocxhn",
+            "email" :"john@example.com",
+            "password":"chomx"
+        },
+        {
+            "id" :4,
+            "name" :"johdn",
+            "email" :"john@example.com",
+            "password":"cu23"
+
+        },
+        {
+            "id" :5,
+            "name" :"johdn",
+            "email" :"john@example.com",
+            "password":"cu3"
+        }
+    ]
+}
