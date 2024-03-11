@@ -1,8 +1,8 @@
-// let a=63, b=32;
-// let c = a;
-// a = b;
-// b = c;
-// console.log(a, b, a*b, b/a);
+let a=63, b=32;
+let c = a;
+a = b;
+b = c;
+console.log(a, b, a*b, b/a);
 // let d="ab23";
 //
 // print fns
