@@ -1,0 +1,46 @@
+{
+    "users" : [
+        {
+            "id": 1,
+            "Name": "Abhishek",
+            "email":"abh@gmail.com",
+            "password":"123"
+        },
+        {
+            "id": 1,
+            "Name": "Akshat",
+            "email":"abh@gmail.com",
+            "password":"345"
+        },
+        {
+            "id": 2,
+            "Name": "Abhishek",
+            "email":"abh@gmail.com",
+            "password":"567"
+        },
+        {
+            "id": 3,
+            "Name": "Akshay",
+            "email":"abc@gmail.com",
+            "password":"789"
+        },
+        {
+            "id": 4,
+            "Name": "Akshit",
+            "email":"abd@gmail.com",
+            "password":"890"
+        },
+        {
+            "id": 5,
+            "Name": "Naman",
+            "email":"abi@gmail.com",
+            "password":"901"
+        },
+        {
+            "id": 6,
+            "Name": "Aditya",
+            "email":"abl@gmail.com",
+            "password":"902"
+        }
+    ]
+}
