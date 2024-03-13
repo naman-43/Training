@@ -34,7 +34,7 @@ async function login(req, res, next) {
 }
 
 function generateToken(user) {
-    return jwt.sign({ username: user.username }, process.env.JWT_SECRET, { expiresIn: '1h' });
+    return jwt.sign({ username: user.username }, "oggy@1234", { expiresIn: '1h' });
 }
 
 function authenticateToken(req, res, next) {
@@ -42,7 +42,7 @@ function authenticateToken(req, res, next) {
     if (!token) {
         return res.status(401).json({ message: 'Authentication token missing' });
     }
-    jwt.verify(token, process.env.JWT_SECRET, (err, decodedToken) => {
+    jwt.verify(token, "oggy@1234", (err, decodedToken) => {
         if (err) {
             return res.status(403).json({ message: 'Invalid token' });
         }
