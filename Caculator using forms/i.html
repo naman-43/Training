@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drone Detection</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+</head>
+<body>
+    <h1>Drone Detection</h1>
+    <input type="file" id="imageFileInput">
+    <button onclick="detectObjects()">Detect Objects</button>
+    <img id="uploadedImage" src="#" alt="Uploaded Image" style="display:none;">
+    <div id="result"></div>
+
+    <script>
+        async function detectObjects() {
+            const imageFileInput = document.getElementById('imageFileInput');
+            const uploadedImage = document.getElementById('uploadedImage');
+            const resultDiv = document.getElementById('result');
+
+            // Load the COCO-SSD model
+            const model = await cocoSsd.load();
+
+            // Read and display the uploaded image
+            const file = imageFileInput.files[0];
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                uploadedImage.src = e.target.result;
+                uploadedImage.style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+
+            // Detect objects in the image
+            const img = document.createElement('img');
+            img.src = uploadedImage.src;
+            const predictions = await model.detect(img);
+
+            // Display the detection results
+            resultDiv.innerHTML = '';
+            if (predictions.length > 0) {
+                resultDiv.innerHTML = '<h2>Detection Results:</h2>';
+                predictions.forEach(prediction => {
+                    resultDiv.innerHTML += `<p>${prediction.class}: ${Math.round(prediction.score * 100)}%</p>`;
+                });
+            } else {
+                resultDiv.innerHTML = '<p>No objects detected.</p>';
+            }
+        }
+    </script>
+</body>
+</html>

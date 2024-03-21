@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .testimonial-slider {
+    width: 300px;
+    margin: 50px auto;
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .testimonial {
+    width: 300px;
+    padding: 20px;
+    background: #df7272;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.5s;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: block;
+  }
+  
+  blockquote {
+    font-style: italic;
+    margin: 0;
+  }
+  
+  cite {
+    font-weight: bold;
+  }
+  
+  .arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  label {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
