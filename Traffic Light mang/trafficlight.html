@@ -23,7 +23,53 @@
   display: flex;
   justify-content:center;
 }
-.btn {
+.btn1 {
+  height: 50px;
+  width: 120px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #f1f5f9;
+  color: rgb(0, 0, 0);
+  border: 1;
+  cursor: pointer;
+}
+.btn2 {
+  height: 50px;
+  width: 120px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #f1f5f9;
+  color: rgb(0, 0, 0);
+  border: 1;
+  cursor: pointer;
+}.btn3 {
+  height: 50px;
+  width: 120px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #f1f5f9;
+  color: rgb(0, 0, 0);
+  border: 1;
+  cursor: pointer;
+}.btn4 {
+  height: 50px;
+  width: 120px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #f1f5f9;
+  color: rgb(0, 0, 0);
+  border: 1;
+  cursor: pointer;
+}.btn5 {
+  height: 50px;
+  width: 120px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #f1f5f9;
+  color: rgb(0, 0, 0);
+  border: 1;
+  cursor: pointer;
+}.btn6 {
   height: 50px;
   width: 120px;
   padding: 10px 20px;
@@ -39,9 +85,34 @@
   flex-direction: column;
   align-items: center;
 }
-.btn:hover {
-  background-color: #828b94;
+.btn1:hover {
+  background-color: #828b94;}
+  .btn2:hover {
+  background-color: #828b94;}
+  .btn3:hover {
+  background-color: #828b94;}
+  .btn4:hover {
+  background-color: #828b94;}
+  .btn5:hover {
+  background-color: #828b94;}
+  .btn6:hover {
+  background-color: #828b94;}
+
+  .btn1:focus{
+    background-color:red;
 }
+.btn2:focus{
+    background-color:yellow;
+}.btn3:focus{
+    background-color:rgb(0, 255, 0);
+}.btn4:focus{
+    background-color:rgb(173, 47, 232);
+}.btn5:focus{
+    background-color:rgb(45, 204, 232);
+}.btn6:focus{
+    background-color:rgb(217, 61, 147);
+}
+
     .traffic-light {
       width: 120px;
       height: 360px;
@@ -157,12 +228,13 @@
     <div class="light" id="green-light"></div>
 </div></div>
 <div id="button-container">
-<button class="btn" onclick="document.getElementById('red').checked = true; ">Red</button>
-<button class="btn" onclick="document.getElementById('yellow').checked = true;">Yellow</button>
-<button class="btn" onclick="document.getElementById('green').checked = true;">Green</button>
-<button class="btn" onclick="document.getElementById('orange').checked = true;">All</button>
-<button class="btn" onclick="document.getElementById('start').checked = true;">Alternate</button>
-<button class="btn" onclick="document.getElementById('reset').checked = true;">Reset</button>
+<button class="btn1" onclick="document.getElementById('red').checked = true; "><b>Red</b></button>
+<button class="btn2" onclick="document.getElementById('yellow').checked = true;"><b>Yellow</b></button>
+<button class="btn3" onclick="document.getElementById('green').checked = true;"><b>Green</b></button>
+<button class="btn4" onclick="document.getElementById('orange').checked = true;"><b>All</b></button>
+<button class="btn5" onclick="document.getElementById('start').checked = true;"><b>Alternate</b></button>
+<button class="btn6" onclick="document.getElementById('reset').checked = true;"><b>Reset</b></button>
 </div></div>
 </body>
 </html>
+
