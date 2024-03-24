@@ -128,7 +128,7 @@
         height: 80px;
         border-radius: 50%;
         background-color: #1e1d1d;
-        transition: background-color 0.9s; 
+        transition: background-color 1s; 
     }
     #red:checked ~ .traffic-light #red-light {
         background-color: rgb(255, 0, 0);
@@ -209,6 +209,7 @@
 
     #reset:checked ~ .traffic-light .light{
         animation: none;
+        background-color: #1e1d1d;
     }
 
 </style>
@@ -220,8 +221,8 @@
 <input type="radio" id="yellow" name="traffic-light" hidden><br>
 <input type="radio" id="green" name="traffic-light" hidden>
 <input type="radio" id="orange" name="traffic-light" hidden>
-<input type="radio" id="start" name="mode" hidden checked>
-<input type="radio" id="reset" name="mode" hidden>
+<input type="radio" id="start" name="traffic-light" hidden>
+<input type="radio" id="reset" name="traffic-light" hidden>
 <div class="traffic-light">
     <div class="light" id="red-light"></div>
     <div class="light" id="yellow-light"></div>
