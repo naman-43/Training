@@ -110,18 +110,15 @@ const text = document.querySelector(".sec-text");
 
         const textLoad = () => {
             setTimeout(() => {
-                text.textContent = "Freelancer";
+                text.textContent = "Naman Bansal";
             }, 0);
             setTimeout(() => {
-                text.textContent = "Designer";
+                text.textContent = "an Engineer";
             }, 4000);
-            setTimeout(() => {
-                text.textContent = "YouTuber";
-            }, 8000); //1s = 1000 milliseconds
         }
 
         textLoad();
-        setInterval(textLoad, 12000);
+        setInterval(textLoad, 8000);
 
 
 /******/

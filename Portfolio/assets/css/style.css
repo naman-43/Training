@@ -421,14 +421,14 @@ header .navbar-brand b {
 .social-box {
   position: relative;
   left: 50%;
-  top: 47%;
+  top: 50%;
   transform: translate(-50%,-50%);
   width: 1.5rem;
 }
 .follow-label {
-  padding-right: 5rem;
+  padding-right: 4.5rem;
   position: absolute;
-  bottom: 85%;
+  bottom: 90%;
   right: 0;
   line-height: 1.5rem;
   height: 1.5rem;
@@ -661,6 +661,7 @@ width: 300px;
   right: 1rem;
   border: 1px solid #f7684c;
 }
+
 .personal-info li{
   margin-bottom: 16px;
 }
