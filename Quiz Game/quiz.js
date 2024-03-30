@@ -78,12 +78,12 @@ const quizArray = [
     },
 ];
 
-//Restart Quiz
-restart.addEventListener("click", () => {
-    initial();
-    displayContainer.classList.remove("hide");
-    scoreContainer.classList.add("hide");
-});
+//Restart
+// restart.addEventListener("click", () => {
+//     initial();
+//     displayContainer.classList.remove("hide");
+//     scoreContainer.classList.add("hide");
+// });
 
 //Next Button
 nextBtn.addEventListener(
