@@ -1,58 +1,73 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-  }
-  
-  .testimonial-slider {
-    width: 600px;
-    margin: 50px;
-    position: relative;
-  }
-  
-  .slides {
-    display: flex;
-    overflow: hidden;
-  }
-  
-  .testimonial {
-    width: 550px;
-    padding: 20px;
-    background: #df7272;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.5s;
-  }
-  
-  .avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin: 0 auto 10px;
-    display: block;
-  }
-  
-  blockquote {
-    font-style: italic;
-    margin: 0;
-  }
-  
-  cite {
-    font-weight: bold;
-  }
-  
-  .arrows {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  label {
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: burlywood;
+  align-content: center;
+}
+.arrow {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  color: #333;
+}
+
+.testimonial-slider {
+  width: 180px;
+  margin: 50px;
+  align-self: center;
+  height: 410px;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 180px;
+  height: 410px;
+  overflow: hidden;
+}
+
+.testimonial {
+  width: 160px;
+  padding: 20px;
+  background: rgba(227, 221, 221, 0.384); /* Change background color to rgba for transparency */
+  backdrop-filter: blur(10px); /* Add glass morphism effect */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.5s;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+blockquote {
+  font-style: italic;
+  flex-grow: 1; /* Allow blockquote to grow and occupy remaining space */
+  margin: 0;
+}
+
+cite {
+  font-weight: bold;
+}
+
+.arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  font-size: 24px;
+  cursor: pointer;
+}

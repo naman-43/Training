@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #5c1f1fd0;
 }
 
 .container {
@@ -13,8 +13,9 @@ body {
 
 h1 {
   text-align: center;
+  font-style: italic;
   margin-bottom: 20px;
-  color: #333;
+  color: #ffffff;
 }
 
 ul {

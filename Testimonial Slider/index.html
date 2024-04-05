@@ -6,7 +6,7 @@
 <title>Testimonial Slider</title>
 <link rel="stylesheet" href="a.css">
 </head>
-<body>
+<body><center>
 <div class="testimonial-slider">
   <div class="slides">
     <div class="testimonial">
@@ -31,9 +31,33 @@
     </div>
   </div>
   <div class="arrows">
-    <label for="prev">&#10094;</label>
-    <label for="next">&#10095;</label>
+    <label for="prev" class="arrow prev" onclick="prevSlide()">&#10094;</label>
+    <label for="next" class="arrow next" onclick="nextSlide()">&#10095;</label>
   </div>
 </div>
+<script>
+  let slideIndex = 0;
+
+function showSlide(n) {
+  let slides = document.querySelectorAll('.testimonial');
+  if (n >= slides.length) { slideIndex = 0; }
+  if (n < 0) { slideIndex = slides.length - 1; }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+  slides[slideIndex].style.display = 'block';
+}
+
+function prevSlide() {
+  showSlide(--slideIndex);
+}
+
+function nextSlide() {
+  showSlide(++slideIndex);
+}
+
+showSlide(slideIndex);
+
+</script>
 </body>
 </html>
