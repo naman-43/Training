@@ -65,14 +65,15 @@ a,a:hover,button {
   outline: none !important;
 }
 .my-6{
-  margin-top: 80px;
+  
   margin-bottom: 80px;
 }
 .mt-6{
-  margin-top: 80px;
+  margin-bottom: 80px;
 }
 .mb-6{
-  margin-bottom: 80px;
+  margin-top: 80px;
+  
 }
 .t-green{
   color: #3cb371;
@@ -815,11 +816,12 @@ width: 300px;
 .resume h3 i {
   padding-right: 0.75rem;
 }
+
 .resume .timeline-box {
   padding: 1rem 0;
 }
 .timeline-content p {
-  margin-bottom: 0 !important;
+  margin-bottom: 12px !important;
 }
 .resume .timeline-year {
   font-size: 15px;
@@ -2488,6 +2490,16 @@ box-shadow: 0 5px 14px 0 #f6bb42;
   color: #fff;
 background-image: linear-gradient(to bottom,#a0d468,#8cc152);
 box-shadow: 0 5px 14px 0 #8cc152;
+}
+.resume .vertical-line > div:nth-child(5) .timeline-year {
+  color: #fff;
+background-image: linear-gradient(to bottom,#65cdac,#42bb95);
+box-shadow: 0 5px 14px 0 #51c0ae;
+}
+.resume .vertical-line > div:nth-child(6) .timeline-year {
+  color: #fff;
+background-image: linear-gradient(to bottom,#c26ac1,#be49bc);
+box-shadow: 0 5px 14px 0 #c36eae;
 }
 /*------------------------- Testimonial -------------------------*/
 .testimonial .testimonial-jub{
